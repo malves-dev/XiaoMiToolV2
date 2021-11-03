@@ -1,4 +1,5 @@
 ## XiaomiToolV2
+This project is a fork of www.xiaomitool.com
 
 This is the source code of the Xiaomi modding tool XiaomiTool V2 (www.xiaomitool.com)
 

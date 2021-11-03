@@ -40,6 +40,7 @@ public class Lang {
     public static void initOnlineLangs(String host) throws CustomHttpException {
         langHost = host + "/lang";
         String indexPath = langHost + "/index.json";
+        Log.info("Init online Langs: " + langHost);
         JSONArray data = new JSONArray(EasyHttp.get(indexPath).getBody());
         for (int i = 0; i < data.length(); ++i) {
             JSONObject entry = data.getJSONObject(i);

@@ -84,6 +84,7 @@ public class XiaomiServiceEntry {
         Log.log_private("Second step request: " + url);
         response = EasyHttp.get(url);
         HashMap<String, String> cookies = response.getCookies();
+        Log.info("Cookies from Xiaomi: " + cookies);
         serviceToken = cookies.get("serviceToken");
         if (serviceToken == null) {
             throw new XiaomiProcedureException("[getServiceToken] Missing serviceToken cookie");
